@@ -1,0 +1,202 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  /* font: inherit; */
+  font-weight: normal;
+  font-size: 14px;
+  font-family:"Microsoft YaHei",微软雅黑,"MicrosoftJhengHei",华文细黑,STHeiti,MingLiu,"icomoon";
+  outline: none !important;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;background-color: #f5f6fa;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+input{outline:none;}
+a:link,a:visited{color: #545454;text-decoration: none;}
+a:hover{text-decoration: underline;}
+
+
+
+.header{width: 100%;position: fixed;z-index: 99999;}
+.header .top{width: 100%;height: 70px;background-color: #fff;overflow: hidden;}
+.header .topWrap{width: 1024px;height: 70px;margin: 0 auto;}
+.header .top .logo {float: left;margin-top: 10px;}
+.header .top .other{float: right;margin-top: 18px;width: 64%}
+.header .top .other .search{
+  float: right;width: 34%;
+  border: 1px solid #dcdcdc;
+  -moz-border-radius: 16px;
+  -webkit-border-radius: 16px;
+  border-radius: 16px;
+  padding:5px;position: relative;
+}
+.header .top .other .search input{
+  color: #7b7b7b;border: none;line-height: 20px;
+  margin-left: 10px;width: 80%;
+}
+.header .top .other .search span{
+    background: url(../img/search-icon.png) center center no-repeat;
+    width: 30px;
+    height: 20px;
+    border: none;
+    cursor: pointer;
+    display: block;
+    position: absolute;right: 3px;top: 6px;
+}
+.header .top .other .topnav{float: right;margin-left: 1%;}
+.header .top .other .topnav li{float: left;line-height: 32px;padding: 0 6px;}
+.header .top .other .topnav li a{color: #7b7b7b}
+.header .top .other .topbtn{float: right;margin-left: 1%;}
+.header .top .other .topbtn .btnRed{
+    background-color: #bd0027;
+    border-color: #bd0027;
+    width: 70px;height:32px;color: #fff;
+    border: 1px solid #bd0027;
+    -moz-border-radius: 16px;
+    -webkit-border-radius: 16px;
+    border-radius: 16px;font-size: 12px;display: block;float: left;
+}
+.header .top .other .topbtn .btnRed.oppo{color: #bd0027;background-color: #fff;margin-left:1%;margin-left:10px;}
+.header .top .other .topbtn .btnRed:hover{cursor: pointer;text-decoration: underline;}
+
+.header .nav{
+    width: 100%;
+    height: 50px;
+    background-color: rgba(5,74,156,0.8);
+}
+.header .navWrap{
+    width: 1024px;
+    margin: 0 auto;
+    height: 50px;
+    position: relative;
+}
+.header .nav .navlist{
+    width: 100%;
+    overflow: hidden;
+}
+.header .nav .navlist>li {
+    float: left;
+    height: 50px;
+    margin:0 2%;
+}
+.header .nav .navlist>li>a {
+    color: #fff;
+    height: 46px;
+    display: block;
+    line-height: 50px;
+}
+.header .nav .navlist>li:hover>a{border-bottom: 4px solid #bd0027;}
+.header .nav .navlist li .bigmenu{
+    position: absolute;
+    top: 50px;
+    left: 0;
+    background: rgba(5,74,156,0.8);
+    overflow: hidden;
+    display: none;
+    z-index: 44444;
+    padding: 40px 60px;
+}
+.header .nav .navlist li .bigmenu .menulist {
+    width: 160px;
+    margin: 0 auto;
+    position: relative;
+    float: left;
+}
+.header .nav .navlist li .bigmenu .menulist p {
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    margin-bottom: 20px;
+}
+.header .nav .navlist li .bigmenu .menulist li a {
+    font-size: 1em;
+    width: 100%;
+    color: #fff;
+    display: block;
+    text-align: center;
+    line-height: 36px;
+}
+
+
+.footer{background-color: #313131;width: 100%;overflow: hidden;}
+.footer>div{width: 900px;min-height: 240px;margin: 50px auto;overflow: hidden;}
+.footer>div ul{width: 20%;float: left;line-height: 35px;}
+.footer>div ul li{padding-left: 50px;}
+.footer>div ul li a:link,.footer>div ul li a:visited{color: #fff;}
+.footer>div ul li a:hover{text-decoration: underline;}
+
+
+
+/* 1024/1440/1920 */
+@media (max-width:1200px){
+  .header .topWrap,
+  .header .navWrap,
+  .secWrap{width: 1000px}
+  .header .nav .navlist>li{margin: 0 2%;}
+  .header .nav .navlist li .bigmenu#J_mainNav6{left:366px;}
+  .header .nav .navlist li .bigmenu#J_mainNav7{left:476px;}
+}
+@media screen and (min-width:1200px) and (max-width:1800px){
+  .header .topWrap,
+  .header .navWrap,
+  .secWrap{width: 1200px}
+  .header .nav .navlist>li{margin: 0 2.6%;}
+  .header .nav .navlist li .bigmenu#J_mainNav4{left:52px;}
+  .header .nav .navlist li .bigmenu#J_mainNav5{left:113px;}
+  .header .nav .navlist li .bigmenu#J_mainNav6{left:490px;}
+  .header .nav .navlist li .bigmenu#J_mainNav7{left:620px;}
+}
+@media screen and (min-width:1800px) and (max-width:2000px){
+  .header .topWrap,
+  .header .navWrap,
+  .secWrap{width: 1800px}
+  .header .nav .navlist>li{margin: 0 3.5%;}
+  .header .nav .navlist li .bigmenu#J_mainNav3{left:64px;}
+  .header .nav .navlist li .bigmenu#J_mainNav4{left:276px;}
+  .header .nav .navlist li .bigmenu#J_mainNav5{left:400px;}
+  .header .nav .navlist li .bigmenu#J_mainNav6{left:838px;}
+  .header .nav .navlist li .bigmenu#J_mainNav7{left:1040px;}
+}
+@media (min-width: 2000px){
+  .header .topWrap,
+  .header .navWrap,
+  .secWrap{width: 2000px}
+  .header .nav .navlist>li{margin: 0 3.7%;}
+  .header .nav .navlist li .bigmenu#J_mainNav3{left:120px;}
+  .header .nav .navlist li .bigmenu#J_mainNav4{left:352px;}
+  .header .nav .navlist li .bigmenu#J_mainNav5{left:498px;}
+  .header .nav .navlist li .bigmenu#J_mainNav6{left:956px;}
+  .header .nav .navlist li .bigmenu#J_mainNav7{left:1176px;}
+}

@@ -1,0 +1,13 @@
+{
+  "title": "供应商注册管理系统",
+  "debug": false,
+  "experiments": {
+  },
+  "locale": "en",
+  "basename": "/",
+  "clientTopology": {
+    "staticsDomain": "static.parastorage.com",
+    "staticsBaseUrl": "//localhost:3200/"
+  }
+
+}

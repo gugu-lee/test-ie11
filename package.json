@@ -1,0 +1,66 @@
+{
+  "name": "@wix/client",
+  "version": "1.0.0",
+  "license": "UNLICENSED",
+  "private": true,
+  "author": {
+    "name": "gulilan",
+    "email": "me@gmail.com"
+  },
+  "scripts": {
+    "start": "yoshi start ",
+    "precommit": "lint-staged",
+    "pretest": "yoshi build ",
+    "test": "yoshi test --jest",
+    "posttest": "yoshi lint",
+    "release": "yoshi release"
+  },
+  "devDependencies": {
+    "enzyme": "~2.9.0",
+    "express": "^4.16.4",
+    "express-session": "~1.15.0",
+    "husky": "~0.14.0",
+    "jest-yoshi-preset": "^3.5.0",
+    "lint-staged": "^7.2.2",
+    "puppeteer": "^1.1.0",
+    "react-test-renderer": "~15.6.0",
+    "velocity": "~0.7.0",
+    "yoshi": "^3.26.0",
+    "yoshi-style-dependencies": "^3.0.0"
+  },
+  "dependencies": {
+    "axios": "^0.16.2",
+    "i18next": "^11.6.0",
+    "ng2-cookies": "^1.0.12",
+    "node-sass": "^4.11.0",
+    "prop-types": "~15.6.0",
+    "react": "15.6.1",
+    "react-dom": "15.6.1",
+    "react-event-timeline": "^1.6.2",
+    "react-i18next": "^7.11.0",
+    "react-router": "^4.3.1",
+    "react-router-dom": "^4.3.1",
+    "store": "^2.0.12",
+    "validator": "^10.10.0",
+    "wix-style-react": "^5.23.0"
+  },
+  "lint-staged": {
+    "*.{js,scss,less}": "yoshi lint"
+  },
+  "yoshi": {
+    "externals": {
+      "react": "React",
+      "react-dom": "ReactDOM"
+    },
+    "hmr": "auto",
+    "splitChunks": true
+  },
+  "babel": {
+    "presets": [
+      "yoshi"
+    ]
+  },
+  "eslintConfig": {
+    "extends": "yoshi"
+  }
+}

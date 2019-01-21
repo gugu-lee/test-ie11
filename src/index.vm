@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>asdfsadf</title>
+		<link rel="stylesheet" href="${clientTopology.staticsBaseUrl}app#if(!${debug}).min#{end}.css">
+		<!--<script src="/js/polyfill.min.js"></script>-->
+		<script src="https://${clientTopology.staticsDomain}/polyfill/v2/polyfill#if(!${debug}).min#{end}.js?features=default,es6,es7,es2017&flags=gated&unknown=polyfill&rum=0"></script>
+		<script src="/js/react.production.min.js" crossorigin></script>
+		<script src="/js/react-dom.production.min.js" crossorigin></script>
+	<link rel="stylesheet" href="css/cssc.css" />
+	</head>
+	<body>
+		<div id="root"></div>
+	<script>
+      window.__BASEURL__ = '${basename}';
+      window.__LOCALE__ = '${locale}';
+      window.__STATICS_BASE_URL__ = '${clientTopology.staticsBaseUrl}';
+    </script>
+    <script src="${clientTopology.staticsBaseUrl}app.bundle.min.js"></script>
+	</body>
+</html>
